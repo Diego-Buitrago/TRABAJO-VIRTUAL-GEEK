@@ -6,7 +6,6 @@ const feliz = document.querySelector('.feliz');
 const triste = document.querySelector('.triste');
 const buttonEl = document.querySelector('.update');
 const divEl = document.querySelector('div');
-console.log(divEl);
 
 function Alert() {
 
@@ -21,8 +20,10 @@ function Alert() {
     }
 
     if (number % 2 === 0) {
+        divEl.classList.remove('naranja');
         divEl.classList.add('amarillo');
     } else {
+        divEl.classList.remove('amarillo');
         divEl.classList.add('naranja');
     }
 
